@@ -92,6 +92,12 @@ namespace MainConsole
                     {
                         GetEmployee.WorkedStartTime = Convert.ToDateTime(GetDayTime[0]);
                         GetEmployee.WorkedEndTime = Convert.ToDateTime(GetDayTime[1]);
+
+                        if(GetEmployee.WorkedEndTime <= GetEmployee.WorkedStartTime)
+                        {
+                            Console.WriteLine($"{GetEmployee.Name}'s out time cannot be before that the in time!\n");
+                            continue;
+                        }
                     }
                     catch
                     {
