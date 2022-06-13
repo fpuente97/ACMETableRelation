@@ -106,7 +106,7 @@ namespace MainConsole
 
         public void ComparingEmployees()
         {
-            if (TextFileLines.Count == 0)
+            if (TextFileLines.Count == 0 || comparingTables == null)
             {
                 Console.WriteLine("There was no file read. Canceling..");
                 return;
