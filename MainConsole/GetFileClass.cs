@@ -32,7 +32,7 @@ namespace MainConsole
         public void CheckIfFileExistThenRead()
         {
             bool FileExists = File.Exists(CurrentPath);
-            Console.WriteLine(FileExists ? "\nFile found!\n" : "\nFile does not exists in directory. Please put the text file in the directory of this app");
+            Console.WriteLine(FileExists ? "File found!\n" : "File does not exists in directory. Please put the text file in the directory of this app");
             if (!FileExists)
                 return;
 
